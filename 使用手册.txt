@@ -1,0 +1,28 @@
+首先你要准备一个数据库，然后在里面创建一张数据库table
+create table customer(
+	id int primary key auto_increment,
+	name varchar(20),
+	gender varchar(10),
+	birthday date,
+	cellphone varchar(20),
+	email varchar(40),
+	preference varchar(100),
+	type varchar(40),
+	description varchar(255)
+
+);
+
+然后去src目录下的c3p0-config.xml文件
+<property name="jdbcUrl">jdbc:mysql:///day12</property> 这里改成你的数据库
+<property name="user">root</property>    这里改成你的数据库用户名
+<property name="password">root</property> 这里改成你的数据库密码
+
+弄完以上东西后，就可以愉快地在数据库进行抽插数据了！
+
+<!-- 我把视频上的两个例子的功能进行了合并 --！>
+
+<!-- 把条件查询功能和分页显示功能合并了 --！>
+
+<!-- 凭一己之力！ --！>
+
+<!-- 以后就来看看我的黑历史吧（笑） --！>
